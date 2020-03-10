@@ -1,0 +1,36 @@
+
+
+conf t
+!
+hostname SW-3
+!
+vtp domain CCNA
+vtp mode server
+vtp password cisco
+!
+int Et0/0
+description Link to PC-C
+switchport access vlan 10
+switchport mode access
+!
+int Et0/1
+description Link to SW-2
+!
+int Et0/2
+description Empty
+shutdown
+!
+int Et0/3
+description Link to SW-1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+!
+int Vl99
+description Management
+ip addr 192.168.99.3 255.255.255.0
+no shutdown
+!
+end
+!
+copy run start
+!
