@@ -2,6 +2,8 @@
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_1/Scheme_Eve-ng.png)
 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_1/IP-Table.png)
+
 Задачи
 
 Часть 1. Настройка VTP
