@@ -10,6 +10,8 @@
  2. Выбор корневого моста</br>  
  3. Наблюдение за процессом выбора протоколом STP порта, исходя из стоимости портов</br>
  4. Наблюдение за процессом выбора протоколом STP порта, исходя из приоритета портов</br>
+ 
+<h3>1.Настройка основных параметров устройства и проверка связности</h3>
 
 ### Пример  базовой настройки коммутатора: 
 
@@ -43,3 +45,40 @@ end
 copy running-config startup-config #Копируем текущую конфигурацию в файл загрузочной конфигурации.
 
 ```
+
+<h3>Проверяем связность между коммутаторами</h3>
+
+эхо-запрос от коммутатора S1 на коммутатор S2:
+```
+S1#ping 192.168.1.3                   
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.1.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/5/8 ms
+```
+
+эхо-запрос от коммутатора S1 на коммутатор S3:
+
+```
+S1#ping 192.168.1.2
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.1.2, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms
+```
+
+эхо-запрос от коммутатора S2 на коммутатор S3:
+
+```
+S2#ping 192.168.1.3                   
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.1.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms
+```
+Положительные пинги говорят, что связность есть. 
+
+
