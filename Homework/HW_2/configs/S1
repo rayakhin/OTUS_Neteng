@@ -1,8 +1,36 @@
-conf t
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
 !
 hostname S1
 !
-enable secret 5 class
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$sKqb$nCMrslPb.z899acKk0Qar/
+!
+no aaa new-model
+clock timezone EET 2
+!
+ip cef
+no ip domain-lookup
+!         
+no ipv6 cef
+!         
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+! 
+!
+!
+!
+!
 !
 interface Ethernet0/0
  description S2-e0/0
@@ -31,6 +59,16 @@ interface Ethernet0/3
 interface Vlan1
  description Management
  ip address 192.168.1.1 255.255.255.0
+!
+!
+ip forward-protocol nd
+no ip http server
+!
+!         
+!
+!
+!
+control-plane
 !
 banner motd ^C!!!!!!! Unauthorized access to this device is prohibited !!!!!!!^C
 !
