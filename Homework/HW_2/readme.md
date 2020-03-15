@@ -201,3 +201,8 @@ Et0/3               Root FWD 100       128.4    Shr
 | S3  | e0/2 | Not Used      | Admin Shutdown         | to S1-e0/2                      |
 | S3  | e0/3 | Root          | Forwarding             | to S1-e0/3                      |
 
+
+
+<h3>3.Наблюдение за процессом выбора протоколом STP порта,
+исходя из стоимости портов</h3>
+
