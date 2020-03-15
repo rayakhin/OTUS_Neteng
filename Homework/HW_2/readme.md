@@ -1,5 +1,6 @@
 
 <h1>Развертывание коммутируемой сети с резервными каналами</h1>
+[]!(https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_2/Topo_STP.PNG)
 
 <h3>Цели</h3>
  1. Создание сети и настройка основных параметров устройства</br>  
