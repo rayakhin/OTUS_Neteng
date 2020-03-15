@@ -1,0 +1,49 @@
+conf t
+!
+hostname S2
+!
+enable secret 5 class
+!
+no ip domain-lookup        
+!         
+interface Ethernet0/0
+ description S1-e0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ duplex auto
+!         
+interface Ethernet0/1
+ description S1-e0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ duplex auto
+!         
+interface Ethernet0/2
+ description S3-e0/0
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ duplex auto
+!         
+interface Ethernet0/3
+ description S3-e0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ duplex auto
+!         
+interface Vlan1
+ description Management
+ ip address 192.168.1.2 255.255.255.0
+!         
+banner motd ^CC!!!!!!! Unauthorized access to this device is prohibited !!!!!!!^C
+!         
+line con 0
+ password cisco
+ logging synchronous
+ login    
+line aux 0
+line vty 0 4
+ password cisco 
+ login    
+ transport input all
+!         
+end       
