@@ -172,5 +172,31 @@ Interface           Role Sts Cost      Prio.Nbr Type
 Et0/1               Altn BLK 100       128.2    Shr 
 Et0/3               Root FWD 100       128.4    Shr 
 ```
+Схема топологии с STP. 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_2/Topo_STP2.PNG)
+Таблица портов на S1:
+| Eq  | Port | Role          | Sts                    | Comment (name)                  |
+|-----|------|---------------|------------------------|---------------------------------|
+| S1  | e0/0 | Not Used      | Admin Shutdown         | to S2-e0/0                      |
+| S1  | e0/1 | Designated    | Forwarding             | to S2-e0/1                      |
+| S1  | e0/2 | Not Used      | Admin Shutdown         | to S3-e0/2                      |
+| S1  | e0/3 | Designated    | Forwarding             | to S3-e0/3                      |
 
+
+Таблица портов на S2:
+| Eq  | Port | Role          | Sts                    | Comment (name)                  |
+|-----|------|---------------|------------------------|---------------------------------|
+| S2  | e0/0 | Not Used      | Admin Shutdown         | to S1-e0/0                      |
+| S2  | e0/1 | Root          | Forwarding             | to S1-e0/1                      |
+| S2  | e0/2 | Not Used      | Admin Shutdown         | to S3-e0/0                      |
+| S2  | e0/3 | Designated    | Forwarding             | to S3-e0/1                      |
+
+
+Таблица портов на S3:
+| Eq  | Port | Role          | Sts                    | Comment (name)                  |
+|-----|------|---------------|------------------------|---------------------------------|
+| S3  | e0/0 | Not Used      | Admin Shutdown         | to S3-e0/2                      |
+| S3  | e0/1 | Alternate     | Blocking               | to S3-e0/3                      |
+| S3  | e0/2 | Not Used      | Admin Shutdown         | to S1-e0/2                      |
+| S3  | e0/3 | Root          | Forwarding             | to S1-e0/3                      |
 
