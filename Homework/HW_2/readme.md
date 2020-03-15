@@ -174,6 +174,7 @@ Et0/3               Root FWD 100       128.4    Shr
 ```
 Схема топологии с STP. 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_2/Topo_STP2.PNG)
+
 Таблица портов на S1:
 | Eq  | Port | Role          | Sts                    | Comment (name)                  |
 |-----|------|---------------|------------------------|---------------------------------|
