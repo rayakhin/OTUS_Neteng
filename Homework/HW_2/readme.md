@@ -3,6 +3,8 @@
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_2/Topo_STP.PNG)
 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_2/IP_Table.PNG)
+
 <h3>Цели</h3>
  1. Создание сети и настройка основных параметров устройства</br>  
  2. Выбор корневого моста</br>  
