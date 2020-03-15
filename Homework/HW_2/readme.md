@@ -81,4 +81,32 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms
 ```
 Положительные пинги говорят, что связность есть. 
 
+<h3>2.Определение корневого моста</h3>
+
+Отключаем все порты на коммутаторах.
+```
+conf t
+int range e0/0-3
+ shutdown
+``` 
+Настроим подключенные порты в качестве транковых.
+```
+ conf t
+  int range e0/0 - 3
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+```
+ 
+
+Включаем порты е0/1 и е0/3 на всех коммутаторах. 
+
+```
+conf t
+ int e0/1
+   no shut
+ 
+ int e0/3
+   no shut
+```
+
 
