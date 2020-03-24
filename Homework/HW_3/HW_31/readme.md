@@ -116,5 +116,8 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S2.PNG)
 
+Проверяем что порты собраны в Port-channel
+
+
 
 
