@@ -13,4 +13,4 @@
 <h3>1.Настройка основных параметров коммутатора </h3>
 Настройки для коммутатора S1:
 
-![Настройки для коммутатора S1:](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/preconfig/S1)
+![Настройки для коммутатора S1:](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/preconfig/S1.txt)
