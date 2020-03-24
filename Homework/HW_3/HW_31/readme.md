@@ -123,6 +123,7 @@ copy running-config startup-config #Копируем текущую конфиг
 
 Но к сожалению Po2 не в работе, так как судя по флагам D на физических портах - они просто не подняты.
 Исправим данное упущение, благо порты не подняты толькосо стороны S2.
+
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/UP_S2.PNG)
 
 
