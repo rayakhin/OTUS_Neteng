@@ -126,7 +126,9 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/UP_S2.PNG)
 
+Результат на лицо, физические порты поднялись и Po2 в работе о чем свидетельствуют флаги SU и P.
 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_Sum_S2.PNG)
 
 
 
