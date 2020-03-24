@@ -102,3 +102,8 @@ copy running-config startup-config #Копируем текущую конфиг
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Check_Trunk_S1.PNG)
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Check_Trunk_S3.PNG)
+
+Из вывода команда может судитьто, что настройки применяемые на Po1, также применились на физических интерфейсах.
+Единственно что отсутствует на Po1, это команды касаемые агрегации видны только на физических портах. 
+
+<h3>3.Настройка протокола LACP</h3> 
