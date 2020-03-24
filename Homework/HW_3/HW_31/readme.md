@@ -111,6 +111,12 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Show_Trunk.PNG)
 
+Вывод команды show spanning-tree на S1 показывает, что данный коммутатор не явлется корневым 
+При этом стоимость Po1 равна 19 и приоритет 32867
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Show_STP.PNG)
+
+
 
 <h3>3.Настройка протокола LACP</h3> 
 
