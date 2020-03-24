@@ -64,3 +64,11 @@ copy running-config startup-config #Копируем текущую конфиг
 соответствии с таблицей IP.
 
 <h3>2.Настройка PAgP </h3>
+
+<h4>Настроим PAgP на S1 и S3</h4>
+
+Для создания канала между S1 и S3 настройте порты на S1 с использованием рекомендуемого режима (desirable), а порты на S3 — с использованием автоматического режима (auto). Включите порты после настройки режимов PAgP.
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S1_PAgP.PNG)
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S3_PAgP.PNG)
