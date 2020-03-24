@@ -86,4 +86,5 @@ copy running-config startup-config #Копируем текущую конфиг
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S3_Sum.PNG)
 
 
+В данном случае параметр SU говорит о том, что  агрегирование второго уровня выполнено и  этот интерфейс используется. А параметр P на портах указывает, что интерфейсы  собраны в port-channel.
 
