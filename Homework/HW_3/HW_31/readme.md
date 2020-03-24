@@ -132,4 +132,20 @@ copy running-config startup-config #Копируем текущую конфиг
 
 
 
+<h4>Настраиваем LACP между S2 и S3.</h4>
+Сначала настраиваем S2
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S2-3.PNG)
+Затем S3
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S3-2.PNG)
+
+Убеждаемся, что Po3 поднялся 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Po3_S2.PNG)
+
+
+
+
+
+
+
+
 
