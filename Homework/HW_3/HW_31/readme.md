@@ -88,3 +88,11 @@ copy running-config startup-config #Копируем текущую конфиг
 
 В данном случае флаг SU говорит о том, что  агрегирование второго уровня выполнено и  этот интерфейс используется. А флаг P на портах указывает, что интерфейсы  собраны в port-channel.
 
+<h4>Настройка транковых портов.</h4>
+После агрегирования портов команды, применённые на интерфейсе Port Channel, влияют на все объединённые в группу каналы. Вручную настраиваем порты Po1 на S1 и S3 в качестве транковых и назначьте их сети native VLAN 99.
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Trunk_S1.PNG)
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Trunk_S3.PNG)
+
+
