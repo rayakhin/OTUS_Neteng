@@ -1,0 +1,127 @@
+
+!
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname S2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$az59$dcNRoBu7.ACS54IORxvks/
+!
+no aaa new-model
+clock timezone EET 2
+!
+ip cef
+no ip domain-lookup
+!
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+!
+interface Port-channel2
+ description Link to S1
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Port-channel3
+ description Link to S3
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Ethernet0/0
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ duplex auto
+ channel-group 3 mode active
+!
+interface Ethernet0/1
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ duplex auto
+ channel-group 3 mode active
+!
+interface Ethernet0/2
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ duplex auto
+ channel-group 2 mode passive
+!
+interface Ethernet0/3
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 99
+ switchport mode trunk
+ duplex auto
+ channel-group 2 mode passive
+!
+interface Ethernet1/0
+ description Link to PC-B
+ switchport access vlan 10
+ switchport mode access
+ duplex auto
+!
+interface Ethernet1/1
+ shutdown
+ duplex auto
+!
+interface Ethernet1/2
+ shutdown
+ duplex auto
+!
+interface Ethernet1/3
+ shutdown
+ duplex auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan99
+ description Management
+ ip address 192.168.99.12 255.255.255.0
+!
+!
+ip forward-protocol nd
+no ip http server
+!
+!
+!
+!
+!
+control-plane
+!
+banner motd ^CC!!!!!!! Unauthorized access to this device is prohibited !!!!!!!^C
+!
+line con 0
+ password cisco
+ logging synchronous
+ login
+line aux 0
+line vty 0 4
+ password cisco
+ login
+ transport input all
+!
+end
