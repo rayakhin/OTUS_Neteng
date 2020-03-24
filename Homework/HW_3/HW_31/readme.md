@@ -112,9 +112,9 @@ copy running-config startup-config #Копируем текущую конфиг
 
 <h4>Настройте LACP между S1 и S2.</h4>
 
-[](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S1.PNG)
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S1.PNG)
 
-[](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S2.PNG)
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S2.PNG)
 
 
 
