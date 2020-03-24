@@ -116,7 +116,16 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/LACP_S2.PNG)
 
-Проверяем что порты собраны в Port-channel
+Проверяем что порты собраны в Port-channel, начнем со стороны S2
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Fail_S2.PNG)
+
+
+Но к сожалению Po2 не в работе, так как судя по флагам D на физических портах - они просто не подняты.
+Исправим данное упущение, благо порты не подняты толькосо стороны S2.
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/UP_S2.PNG)
+
+
 
 
 
