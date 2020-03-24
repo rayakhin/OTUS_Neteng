@@ -145,6 +145,11 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Po3_S2.PNG)
 
+Проверяем свзяность между конечными точками, для примера с PC-B
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/PING_PC.PNG)
+
+
 
 
 
