@@ -77,3 +77,13 @@ copy running-config startup-config #Копируем текущую конфиг
 В настоящее время интерфейсы e0/2, e0/3 и Po1 (Port-channel1) на коммутаторах S1 и S3 находятся в режиме доступе, а режим управления установлен на динамический автоматический режим (dynamic auto). Проверяем конфигурацию с помощью соответствующих команд show run interface идентификатор-интерфейса и show interfaces идентификатор-интерфейса switchport. Для интерфейса e0/3 на S1 отображаются следующие выходные данные конфигурации:
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S1_int_config.PNG)
+
+
+<h4>Убеждаемся, что порты объединены.</h4>
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S1_Sum.PNG)
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/S3_Sum.PNG)
+
+
+
