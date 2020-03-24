@@ -95,4 +95,6 @@ copy running-config startup-config #Копируем текущую конфиг
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_3/HW_31/Trunk_S3.PNG)
 
+<h4>Проверяем,что порты настроены в качестве транковых.</h4>
 
+Выполняем команду show run interface идентификатор-интерфейса на S1 и S3.
