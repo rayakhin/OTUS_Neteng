@@ -27,9 +27,11 @@
 Проверим информацию о соседних устройствах и маршрутизации OSPFкомандами show ip ospf neighbor и show ip route для примера на R1
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_OSPF_SHOW.PNG)
+
 Проверим параметры протокола OSPF использовав команду show ip protocols
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_PROTO.PNG)
+
 Командой show ip ospf проверим данные процесса OSPF
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_PROC.PNG)
