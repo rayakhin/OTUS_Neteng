@@ -42,3 +42,8 @@
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_INT1.PNG)
 
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_INT2.PNG)
+
+Теперь пропингуем для примера с PC-A, и видим что связность между хостами есть. Все работает.
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/PING.PNG)
+
