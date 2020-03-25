@@ -1,0 +1,34 @@
+conf t
+
+hostname R1
+
+enable secret class
+
+no ip domain lookup 
+
+
+int e0/0
+description Link to PC-A
+ip addr 192.168.1.1 255.255.255.0
+ 
+int s1/2
+description Link to R2
+ip addr 192.168.12.1 255.255.255.252
+clock rate 128000
+ 
+int s1/3
+description Link to R3
+ip addr 192.168.13.1 255.255.255.252
+
+banner motd ^C!!!!!!! Unauthorized access to this device is prohibited !!!!!!!^C
+
+line vty 0 4 
+ password cisco
+ login 
+
+line con 0 
+ password cisco
+ logging synchronous 
+ login 
+ 
+ end
