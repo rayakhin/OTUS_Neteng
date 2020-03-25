@@ -14,24 +14,29 @@
 
 
 
-<h4>Настройка и проверка маршрутизации OSPF</h4> 
+<h4>Настройка и проверка маршрутизации OSPF</h4>
+
 Настроим протокол OSPF на маршрутизаторе R1.
 
-
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_NETS.PNG)
 аналогично повторим данную процедуру для R2 и R3 
-После на маршрутизаторе R1  появились сообщения об отношениях смежности. 
+После на маршрутизаторе R1  появятся сообщения об отношениях смежности.
 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_ADJ.PNG)
 
+Проверим информацию о соседних устройствах и маршрутизации OSPFкомандами show ip ospf neighbor и show ip route для примера на R1
 
-Проверим информацию о соседних устройствах и маршрутизации OSPF. 
-командами show ip ospf neighbor и show ip route для примера на R1
-
-
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_OSPF_SHOW.PNG)
 Проверим параметры протокола OSPF использовав команду show ip protocols
 
-
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_PROTO.PNG)
 Командой show ip ospf проверим данные процесса OSPF
 
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_PROC.PNG)
 
 Для проверки параметров интерфейса OSPF используем  show ip ospf interface brief(для отображения сводки интерфейсов с поддержкой протокола OSPF.) 
 и show ip ospf interface(для более детальной информации)
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_INT1.PNG)
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/OSPF_INT2.PNG)
