@@ -87,4 +87,6 @@ show ip ospf neighbor на маршрутизаторе R1, чтобы убед�
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_IP_PROTO.PNG)
 
 
+<h4>4.Настройка пассивных интерфейсов OSPF</h4> 
+
 
