@@ -14,7 +14,7 @@
 
 <h4>1.Создание сети и настройка основных параметров устройства</h4>
 
-[Предваритильная настройка](https://github.com/rayakhin/OTUS_Neteng/tree/master/Homework/HW_5/preconfig)
+[Предваритильная настройка router-ов](https://github.com/rayakhin/OTUS_Neteng/tree/master/Homework/HW_5/preconfig)
 
 <h4>2.Настройка и проверка маршрутизации OSPF</h4>
 
