@@ -72,5 +72,19 @@
 ![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_LOOP2.PNG)
 
 
+Теперь изменим идентификатор с помощью команды router-id сначала R1
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_ROUTER_ID.PNG)
+
+Информационное сообщение говорит о том, что необходимо либо перезагрузить маршрутизатор, либо воспользоваться командой clear ip ospf process для вступления этого изменения в силу. Так что воспользуемся командой clear ip ospf process на всех трех маршрутизаторах. Введи 
+
+Для маршрутизатор R2 настройте идентификатор 22.22.22.22, а для маршрутизатора R3 настройте идентификатор 33.33.33.33. Затем используйте команду clear ip ospf process для сброса процесса маршрутизации ospf. 
+
+Введите команду show ip protocols, чтобы проверить, изменился ли идентификатор на маршрутизаторе и 
+show ip ospf neighbor на маршрутизаторе R1, чтобы убедиться, что новые идентификаторы для маршрутизаторов R2 и R3 
+содержатся в списке
+
+![](https://github.com/rayakhin/OTUS_Neteng/blob/master/Homework/HW_5/R1_IP_PROTO.PNG)
+
 
 
